@@ -1,0 +1,645 @@
+2025-05-21 15:52:15 [INFO] - Iniciando o processo de atualização de dados.
+2025-05-21 15:52:15 [INFO] - Carregando query SQL.
+2025-05-21 15:52:15 [INFO] - Conectando ao SQL Server.
+2025-05-21 15:52:17 [INFO] - Executando a consulta.
+2025-05-21 15:52:23 [INFO] - Conectando ao Google Sheets.
+2025-05-21 15:52:23 [INFO] - Formatando datas.
+2025-05-21 15:52:23 [INFO] - Limpando a worksheet.
+2025-05-21 15:52:23 [ERROR] - Erro durante o processo: expected string or bytes-like object, got 'NoneType'
+Traceback (most recent call last):
+  File "c:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\main.py", line 50, in main
+    clear_worksheet(client, GOOGLE_URL, WORKSHEET_NAME)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\mods\google_sheets.py", line 30, in clear_worksheet
+    spreadsheet = client.open_by_url(url)
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\venv\Lib\site-packages\gspread\client.py", line 189, in open_by_url
+    return self.open_by_key(extract_id_from_url(url))
+                            ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\venv\Lib\site-packages\gspread\utils.py", line 614, in extract_id_from_url
+    m2 = URL_KEY_V2_RE.search(url)
+TypeError: expected string or bytes-like object, got 'NoneType'
+2025-05-21 15:55:02 [INFO] - Iniciando o processo de atualização de dados.
+2025-05-21 15:55:02 [INFO] - Carregando query SQL.
+2025-05-21 15:55:02 [INFO] - Conectando ao SQL Server.
+2025-05-21 15:55:07 [INFO] - Executando a consulta.
+2025-05-21 15:57:13 [INFO] - Conectando ao Google Sheets.
+2025-05-21 15:57:13 [INFO] - Formatando datas.
+2025-05-21 15:57:14 [INFO] - Limpando a worksheet.
+2025-05-21 15:57:14 [ERROR] - Erro durante o processo: expected string or bytes-like object, got 'NoneType'
+Traceback (most recent call last):
+  File "c:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\main.py", line 50, in main
+    clear_worksheet(client, GOOGLE_URL, WORKSHEET_NAME)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\mods\google_sheets.py", line 30, in clear_worksheet
+    spreadsheet = client.open_by_url(url)
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\venv\Lib\site-packages\gspread\client.py", line 189, in open_by_url
+    return self.open_by_key(extract_id_from_url(url))
+                            ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\venv\Lib\site-packages\gspread\utils.py", line 614, in extract_id_from_url
+    m2 = URL_KEY_V2_RE.search(url)
+TypeError: expected string or bytes-like object, got 'NoneType'
+2025-05-21 15:59:43 [INFO] - Iniciando o processo de atualização de dados.
+2025-05-21 15:59:43 [INFO] - Carregando query SQL.
+2025-05-21 15:59:43 [INFO] - Conectando ao SQL Server.
+2025-05-21 15:59:44 [INFO] - Executando a consulta.
+2025-05-21 15:59:51 [INFO] - Conectando ao Google Sheets.
+2025-05-21 15:59:51 [INFO] - Formatando datas.
+2025-05-21 15:59:51 [INFO] - Limpando a worksheet.
+2025-05-21 15:59:51 [ERROR] - Erro durante o processo: expected string or bytes-like object, got 'NoneType'
+Traceback (most recent call last):
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\main.py", line 50, in main
+    clear_worksheet(client, GOOGLE_URL, WORKSHEET_NAME)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\mods\google_sheets.py", line 30, in clear_worksheet
+    spreadsheet = client.open_by_url(url)
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\venv\Lib\site-packages\gspread\client.py", line 189, in open_by_url
+    return self.open_by_key(extract_id_from_url(url))
+                            ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\venv\Lib\site-packages\gspread\utils.py", line 614, in extract_id_from_url
+    m2 = URL_KEY_V2_RE.search(url)
+TypeError: expected string or bytes-like object, got 'NoneType'
+2025-05-21 16:02:52 [INFO] - Iniciando o processo de atualização de dados.
+2025-05-21 16:02:52 [INFO] - Carregando query SQL.
+2025-05-21 16:02:52 [INFO] - Conectando ao SQL Server.
+2025-05-21 16:02:54 [INFO] - Executando a consulta.
+2025-05-21 16:03:00 [INFO] - Conectando ao Google Sheets.
+2025-05-21 16:03:00 [INFO] - Formatando datas.
+2025-05-21 16:03:01 [INFO] - Limpando a worksheet.
+2025-05-21 16:03:03 [INFO] - Inserindo novos dados na worksheet.
+2025-05-21 16:03:04 [ERROR] - Erro durante o processo: Out of range float values are not JSON compliant: nan
+Traceback (most recent call last):
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\venv\Lib\site-packages\requests\models.py", line 510, in prepare_body
+    body = complexjson.dumps(json, allow_nan=False)
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+ValueError: Out of range float values are not JSON compliant: nan
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\main.py", line 53, in main
+    insert_dataframe_to_worksheet(client, GOOGLE_URL, WORKSHEET_NAME, df)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\mods\google_sheets.py", line 42, in insert_dataframe_to_worksheet
+    worksheet.update('A1', data)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\venv\Lib\site-packages\gspread\worksheet.py", line 1242, in update
+    response = self.client.values_update(
+        self.spreadsheet_id,
+    ...<2 lines>...
+        body={"values": values, "majorDimension": major_dimension},
+    )
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\venv\Lib\site-packages\gspread\http_client.py", line 173, in values_update
+    r = self.request("put", url, params=params, json=body)
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\venv\Lib\site-packages\gspread\http_client.py", line 114, in request
+    response = self.session.request(
+        method=method,
+    ...<6 lines>...
+        timeout=self.timeout,
+    )
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\venv\Lib\site-packages\google\auth\transport\requests.py", line 537, in request
+    response = super(AuthorizedSession, self).request(
+        method,
+    ...<4 lines>...
+        **kwargs
+    )
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\venv\Lib\site-packages\requests\sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\venv\Lib\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+    ~~~~~~~~~^
+        method=request.method.upper(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        hooks=merge_hooks(request.hooks, self.hooks),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\venv\Lib\site-packages\requests\models.py", line 370, in prepare
+    self.prepare_body(data, files, json)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Downloads\_TESTS_\DW_CLIENTS\venv\Lib\site-packages\requests\models.py", line 512, in prepare_body
+    raise InvalidJSONError(ve, request=self)
+requests.exceptions.InvalidJSONError: Out of range float values are not JSON compliant: nan
+2025-05-21 16:04:57 [INFO] - Iniciando o processo de atualização de dados.
+2025-05-21 16:04:57 [INFO] - Carregando query SQL.
+2025-05-21 16:04:57 [INFO] - Conectando ao SQL Server.
+2025-05-21 16:04:59 [INFO] - Executando a consulta.
+2025-05-21 16:05:03 [INFO] - Conectando ao Google Sheets.
+2025-05-21 16:05:03 [INFO] - Formatando datas.
+2025-05-21 16:05:03 [INFO] - Tratando valores ausentes (NaN).
+2025-05-21 16:05:03 [INFO] - Limpando a worksheet.
+2025-05-21 16:05:06 [INFO] - Inserindo novos dados na worksheet.
+2025-05-21 16:05:24 [INFO] - Processo finalizado com sucesso.
+2025-05-21 16:48:46 [INFO] - Iniciando o processo de atualização de dados.
+2025-05-21 16:48:46 [INFO] - Carregando query SQL.
+2025-05-21 16:48:46 [INFO] - Conectando ao SQL Server.
+2025-05-21 16:48:48 [INFO] - Executando a consulta.
+2025-05-21 16:48:55 [INFO] - Conectando ao Google Sheets.
+2025-05-21 16:48:55 [INFO] - Formatando datas.
+2025-05-21 16:48:55 [INFO] - Tratando valores ausentes (NaN).
+2025-05-21 16:48:55 [INFO] - Limpando a worksheet.
+2025-05-21 16:48:56 [ERROR] - Erro durante o processo: 
+Traceback (most recent call last):
+  File "C:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\venv\Lib\site-packages\gspread\client.py", line 168, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+  File "C:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\venv\Lib\site-packages\gspread\spreadsheet.py", line 29, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "C:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\venv\Lib\site-packages\gspread\spreadsheet.py", line 230, in fetch_sheet_metadata
+    return self.client.fetch_sheet_metadata(self.id, params=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\venv\Lib\site-packages\gspread\http_client.py", line 305, in fetch_sheet_metadata
+    r = self.request("get", url, params=params)
+  File "C:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\venv\Lib\site-packages\gspread\http_client.py", line 128, in request
+    raise APIError(response)
+gspread.exceptions.APIError: APIError: [403]: The caller does not have permission
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\main.py", line 53, in main
+    clear_worksheet(client, GOOGLE_URL, WORKSHEET_NAME)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\mods\google_sheets.py", line 30, in clear_worksheet
+    spreadsheet = client.open_by_url(url)
+  File "C:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\venv\Lib\site-packages\gspread\client.py", line 189, in open_by_url
+    return self.open_by_key(extract_id_from_url(url))
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\venv\Lib\site-packages\gspread\client.py", line 173, in open_by_key
+    raise PermissionError from ex
+PermissionError
+2025-05-21 16:49:37 [INFO] - Iniciando o processo de atualização de dados.
+2025-05-21 16:49:37 [INFO] - Carregando query SQL.
+2025-05-21 16:49:37 [INFO] - Conectando ao SQL Server.
+2025-05-21 16:49:38 [INFO] - Executando a consulta.
+2025-05-21 16:49:58 [INFO] - Conectando ao Google Sheets.
+2025-05-21 16:49:58 [INFO] - Formatando datas.
+2025-05-21 16:49:58 [INFO] - Tratando valores ausentes (NaN).
+2025-05-21 16:49:58 [INFO] - Limpando a worksheet.
+2025-05-21 16:49:59 [ERROR] - Erro durante o processo: 
+Traceback (most recent call last):
+  File "C:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\venv\Lib\site-packages\gspread\client.py", line 168, in open_by_key
+    spreadsheet = Spreadsheet(self.http_client, {"id": key})
+  File "C:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\venv\Lib\site-packages\gspread\spreadsheet.py", line 29, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "C:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\venv\Lib\site-packages\gspread\spreadsheet.py", line 230, in fetch_sheet_metadata
+    return self.client.fetch_sheet_metadata(self.id, params=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\venv\Lib\site-packages\gspread\http_client.py", line 305, in fetch_sheet_metadata
+    r = self.request("get", url, params=params)
+  File "C:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\venv\Lib\site-packages\gspread\http_client.py", line 128, in request
+    raise APIError(response)
+gspread.exceptions.APIError: APIError: [403]: The caller does not have permission
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\main.py", line 53, in main
+    clear_worksheet(client, GOOGLE_URL, WORKSHEET_NAME)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\mods\google_sheets.py", line 30, in clear_worksheet
+    spreadsheet = client.open_by_url(url)
+  File "C:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\venv\Lib\site-packages\gspread\client.py", line 189, in open_by_url
+    return self.open_by_key(extract_id_from_url(url))
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Downloads\_TESTS_\MIGRACAO_CLIENTS\venv\Lib\site-packages\gspread\client.py", line 173, in open_by_key
+    raise PermissionError from ex
+PermissionError
+2025-05-21 16:51:04 [INFO] - Iniciando o processo de atualização de dados.
+2025-05-21 16:51:04 [INFO] - Carregando query SQL.
+2025-05-21 16:51:04 [INFO] - Conectando ao SQL Server.
+2025-05-21 16:51:06 [INFO] - Executando a consulta.
+2025-05-21 16:51:12 [INFO] - Conectando ao Google Sheets.
+2025-05-21 16:51:12 [INFO] - Formatando datas.
+2025-05-21 16:51:12 [INFO] - Tratando valores ausentes (NaN).
+2025-05-21 16:51:12 [INFO] - Limpando a worksheet.
+2025-05-21 16:51:14 [INFO] - Inserindo novos dados na worksheet.
+2025-05-21 16:51:32 [INFO] - Processo finalizado com sucesso.
+2025-07-16 10:26:51 [INFO] - Iniciando o processo de atualização de dados.
+2025-07-16 10:26:51 [INFO] - Carregando query SQL.
+2025-07-16 10:26:51 [INFO] - Conectando ao SQL Server.
+2025-07-16 10:40:52 [INFO] - Iniciando o processo de atualização de dados.
+2025-07-16 10:40:52 [INFO] - Carregando query SQL.
+2025-07-16 10:40:52 [INFO] - Conectando ao SQL Server.
+2025-07-16 10:40:54 [INFO] - Executando a consulta.
+2025-07-16 10:40:55 [INFO] - Conectando ao Google Sheets.
+2025-07-16 10:40:55 [INFO] - Formatando datas.
+2025-07-16 10:40:55 [INFO] - Tratando valores ausentes (NaN).
+2025-07-16 10:40:55 [INFO] - Limpando a worksheet.
+2025-07-16 10:40:57 [INFO] - Inserindo novos dados na worksheet.
+2025-07-16 10:40:58 [INFO] - Processo finalizado com sucesso.
+2025-07-16 12:37:23 [INFO] - Iniciando o processo de atualização de dados.
+2025-07-16 12:37:23 [INFO] - Carregando query SQL.
+2025-07-16 12:37:23 [INFO] - Conectando ao SQL Server.
+2025-07-16 12:37:25 [INFO] - Executando a consulta.
+2025-07-16 12:37:28 [INFO] - Conectando ao Google Sheets.
+2025-07-16 12:37:28 [INFO] - Formatando datas.
+2025-07-16 12:37:28 [INFO] - Tratando valores ausentes (NaN).
+2025-07-16 12:37:28 [INFO] - Limpando a worksheet.
+2025-07-16 12:37:29 [INFO] - Inserindo novos dados na worksheet.
+2025-07-16 12:37:32 [INFO] - Processo finalizado com sucesso.
+2025-07-23 10:58:04 [INFO] - Iniciando o processo de atualização de dados.
+2025-07-23 10:58:04 [INFO] - Carregando query SQL.
+2025-07-23 10:58:04 [INFO] - Conectando ao SQL Server.
+2025-07-23 10:58:06 [INFO] - Executando a consulta.
+2025-07-23 10:58:09 [INFO] - Conectando ao Google Sheets.
+2025-07-23 10:58:09 [INFO] - Formatando datas.
+2025-07-23 10:58:09 [INFO] - Tratando valores ausentes (NaN).
+2025-07-23 10:58:09 [INFO] - Limpando a worksheet.
+2025-07-23 10:58:11 [INFO] - Inserindo novos dados na worksheet.
+2025-07-23 10:58:15 [INFO] - Processo finalizado com sucesso.
+2025-07-23 10:59:15 [INFO] - Iniciando o processo de atualização de dados.
+2025-07-23 10:59:15 [INFO] - Carregando query SQL.
+2025-07-23 10:59:15 [INFO] - Conectando ao SQL Server.
+2025-07-23 10:59:17 [INFO] - Executando a consulta.
+2025-07-23 10:59:19 [INFO] - Conectando ao Google Sheets.
+2025-07-23 10:59:19 [INFO] - Formatando datas.
+2025-07-23 10:59:19 [INFO] - Tratando valores ausentes (NaN).
+2025-07-23 10:59:19 [INFO] - Limpando a worksheet.
+2025-07-23 10:59:20 [INFO] - Inserindo novos dados na worksheet.
+2025-07-23 10:59:24 [INFO] - Processo finalizado com sucesso.
+2025-07-23 13:15:13 [INFO] - Iniciando o processo de atualização de dados.
+2025-07-23 13:15:13 [INFO] - Carregando query SQL.
+2025-07-23 13:15:13 [INFO] - Conectando ao SQL Server.
+2025-07-23 13:15:15 [INFO] - Executando a consulta.
+2025-07-23 13:15:18 [INFO] - Conectando ao Google Sheets.
+2025-07-23 13:15:18 [INFO] - Formatando datas.
+2025-07-23 13:15:18 [INFO] - Tratando valores ausentes (NaN).
+2025-07-23 13:15:18 [INFO] - Limpando a worksheet.
+2025-07-23 13:15:20 [INFO] - Inserindo novos dados na worksheet.
+2025-07-23 13:15:26 [INFO] - Processo finalizado com sucesso.
+2025-07-23 15:08:24 [INFO] - Iniciando o processo de atualização de dados.
+2025-07-23 15:08:24 [INFO] - Carregando query SQL.
+2025-07-23 15:08:24 [INFO] - Conectando ao SQL Server.
+2025-07-23 15:08:27 [INFO] - Executando a consulta.
+2025-07-23 15:08:31 [INFO] - Conectando ao Google Sheets.
+2025-07-23 15:08:31 [INFO] - Formatando datas.
+2025-07-23 15:08:31 [INFO] - Tratando valores ausentes (NaN).
+2025-07-23 15:08:31 [INFO] - Limpando a worksheet.
+2025-07-23 15:08:45 [INFO] - Inserindo novos dados na worksheet.
+2025-07-23 15:08:48 [INFO] - Processo finalizado com sucesso.
+2025-08-05 11:06:09 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-05 11:06:09 [INFO] - Carregando query SQL.
+2025-08-05 11:06:09 [INFO] - Conectando ao SQL Server.
+2025-08-05 11:06:12 [INFO] - Executando a consulta.
+2025-08-05 11:06:17 [INFO] - Conectando ao Google Sheets.
+2025-08-05 11:06:17 [INFO] - Formatando datas.
+2025-08-05 11:06:17 [INFO] - Tratando valores ausentes (NaN).
+2025-08-05 11:06:17 [INFO] - Limpando a worksheet.
+2025-08-05 11:06:19 [INFO] - Inserindo novos dados na worksheet.
+2025-08-05 11:06:23 [INFO] - Processo finalizado com sucesso.
+2025-08-06 12:23:09 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-06 12:23:09 [INFO] - Carregando query SQL.
+2025-08-06 12:23:09 [INFO] - Conectando ao SQL Server.
+2025-08-06 12:23:11 [INFO] - Executando a consulta.
+2025-08-06 12:23:15 [INFO] - Conectando ao Google Sheets.
+2025-08-06 12:23:15 [INFO] - Formatando datas.
+2025-08-06 12:23:15 [INFO] - Tratando valores ausentes (NaN).
+2025-08-06 12:23:15 [INFO] - Limpando a worksheet.
+2025-08-06 12:23:17 [INFO] - Inserindo novos dados na worksheet.
+2025-08-06 12:23:23 [INFO] - Processo finalizado com sucesso.
+2025-08-07 10:50:21 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-07 10:50:21 [INFO] - Carregando query SQL.
+2025-08-07 10:50:21 [INFO] - Conectando ao SQL Server.
+2025-08-07 10:50:24 [INFO] - Executando a consulta.
+2025-08-07 10:50:47 [INFO] - Conectando ao Google Sheets.
+2025-08-07 10:50:47 [INFO] - Formatando datas.
+2025-08-07 10:50:47 [INFO] - Tratando valores ausentes (NaN).
+2025-08-07 10:50:47 [INFO] - Limpando a worksheet.
+2025-08-07 10:50:50 [INFO] - Inserindo novos dados na worksheet.
+2025-08-07 10:50:59 [INFO] - Processo finalizado com sucesso.
+2025-08-07 11:38:18 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-07 11:38:18 [INFO] - Carregando query SQL.
+2025-08-07 11:38:18 [INFO] - Conectando ao SQL Server.
+2025-08-07 11:38:21 [INFO] - Executando a consulta.
+2025-08-07 11:38:48 [INFO] - Conectando ao Google Sheets.
+2025-08-07 11:38:48 [INFO] - Formatando datas.
+2025-08-07 11:38:48 [INFO] - Tratando valores ausentes (NaN).
+2025-08-07 11:38:48 [INFO] - Limpando a worksheet.
+2025-08-07 11:38:50 [INFO] - Inserindo novos dados na worksheet.
+2025-08-07 11:39:08 [INFO] - Processo finalizado com sucesso.
+2025-08-07 12:19:21 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-07 12:19:21 [INFO] - Carregando query SQL.
+2025-08-07 12:19:21 [INFO] - Conectando ao SQL Server.
+2025-08-07 12:19:23 [INFO] - Executando a consulta.
+2025-08-07 12:19:55 [INFO] - Conectando ao Google Sheets.
+2025-08-07 12:19:55 [INFO] - Formatando datas.
+2025-08-07 12:19:55 [INFO] - Tratando valores ausentes (NaN).
+2025-08-07 12:19:55 [INFO] - Limpando a worksheet.
+2025-08-07 12:19:57 [INFO] - Inserindo novos dados na worksheet.
+2025-08-07 12:20:02 [INFO] - Processo finalizado com sucesso.
+2025-08-07 12:27:53 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-07 12:27:53 [INFO] - Carregando query SQL.
+2025-08-07 12:27:53 [INFO] - Conectando ao SQL Server.
+2025-08-07 12:27:56 [INFO] - Executando a consulta.
+2025-08-07 12:28:03 [INFO] - Conectando ao Google Sheets.
+2025-08-07 12:28:03 [INFO] - Formatando datas.
+2025-08-07 12:28:03 [INFO] - Tratando valores ausentes (NaN).
+2025-08-07 12:28:03 [INFO] - Limpando a worksheet.
+2025-08-07 12:28:05 [INFO] - Inserindo novos dados na worksheet.
+2025-08-07 12:28:05 [ERROR] - Erro durante o processo: Object of type date is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\main.py", line 56, in main
+    insert_dataframe_to_worksheet(client, GOOGLE_URL, WORKSHEET_NAME, df)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\mods\google_sheets.py", line 42, in insert_dataframe_to_worksheet
+    worksheet.update('A1', data)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\gspread\worksheet.py", line 1246, in update
+    response = self.client.values_update(
+        self.spreadsheet_id,
+    ...<2 lines>...
+        body={"values": values, "majorDimension": major_dimension},
+    )
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\gspread\http_client.py", line 173, in values_update
+    r = self.request("put", url, params=params, json=body)
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\gspread\http_client.py", line 114, in request
+    response = self.session.request(
+        method=method,
+    ...<6 lines>...
+        timeout=self.timeout,
+    )
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\google\auth\transport\requests.py", line 540, in request
+    response = super(AuthorizedSession, self).request(
+        method,
+    ...<4 lines>...
+        **kwargs
+    )
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\requests\sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+    ~~~~~~~~~^
+        method=request.method.upper(),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        hooks=merge_hooks(request.hooks, self.hooks),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\requests\models.py", line 370, in prepare
+    self.prepare_body(data, files, json)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\requests\models.py", line 510, in prepare_body
+    body = complexjson.dumps(json, allow_nan=False)
+  File "C:\Program Files\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Program Files\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type date is not JSON serializable
+2025-08-07 12:32:52 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-07 12:32:52 [INFO] - Carregando query SQL.
+2025-08-07 12:32:52 [INFO] - Conectando ao SQL Server.
+2025-08-07 12:32:55 [INFO] - Executando a consulta.
+2025-08-07 12:33:00 [INFO] - Conectando ao Google Sheets.
+2025-08-07 12:33:00 [INFO] - Formatando datas.
+2025-08-07 12:33:00 [INFO] - Tratando valores ausentes (NaN).
+2025-08-07 12:33:00 [INFO] - Limpando a worksheet.
+2025-08-07 12:33:02 [INFO] - Inserindo novos dados na worksheet.
+2025-08-07 12:33:14 [ERROR] - Erro durante o processo: ('Connection aborted.', ConnectionResetError(10054, 'Foi forçado o cancelamento de uma conexão existente pelo host remoto', None, 10054, None))
+Traceback (most recent call last):
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Program Files\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Program Files\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Program Files\Python313\Lib\http\client.py", line 1430, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Program Files\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Program Files\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Foi forçado o cancelamento de uma conexão existente pelo host remoto', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\main.py", line 56, in main
+    insert_dataframe_to_worksheet(client, GOOGLE_URL, WORKSHEET_NAME, df)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\mods\google_sheets.py", line 42, in insert_dataframe_to_worksheet
+    worksheet.update('A1', data)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\gspread\worksheet.py", line 1246, in update
+    response = self.client.values_update(
+        self.spreadsheet_id,
+    ...<2 lines>...
+        body={"values": values, "majorDimension": major_dimension},
+    )
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\gspread\http_client.py", line 173, in values_update
+    r = self.request("put", url, params=params, json=body)
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\gspread\http_client.py", line 114, in request
+    response = self.session.request(
+        method=method,
+    ...<6 lines>...
+        timeout=self.timeout,
+    )
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\google\auth\transport\requests.py", line 540, in request
+    response = super(AuthorizedSession, self).request(
+        method,
+    ...<4 lines>...
+        **kwargs
+    )
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\gabri\OneDrive\Documentos\Job - ASBEVI\0 - Python\INADIMPLENTES\venv\Lib\site-packages\requests\adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'Foi forçado o cancelamento de uma conexão existente pelo host remoto', None, 10054, None))
+2025-08-07 12:33:58 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-07 12:33:58 [INFO] - Carregando query SQL.
+2025-08-07 12:33:58 [INFO] - Conectando ao SQL Server.
+2025-08-07 12:34:01 [INFO] - Executando a consulta.
+2025-08-07 12:34:12 [INFO] - Conectando ao Google Sheets.
+2025-08-07 12:34:12 [INFO] - Formatando datas.
+2025-08-07 12:34:12 [INFO] - Tratando valores ausentes (NaN).
+2025-08-07 12:34:12 [INFO] - Limpando a worksheet.
+2025-08-07 12:34:15 [INFO] - Inserindo novos dados na worksheet.
+2025-08-07 12:34:20 [INFO] - Processo finalizado com sucesso.
+2025-08-07 12:39:55 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-07 12:39:55 [INFO] - Carregando query SQL.
+2025-08-07 12:39:55 [INFO] - Conectando ao SQL Server.
+2025-08-07 12:39:58 [INFO] - Executando a consulta.
+2025-08-07 12:40:03 [INFO] - Conectando ao Google Sheets.
+2025-08-07 12:40:03 [INFO] - Formatando datas.
+2025-08-07 12:40:03 [INFO] - Tratando valores ausentes (NaN).
+2025-08-07 12:40:03 [INFO] - Limpando a worksheet.
+2025-08-07 12:40:05 [INFO] - Inserindo novos dados na worksheet.
+2025-08-07 12:40:09 [INFO] - Processo finalizado com sucesso.
+2025-08-07 13:58:03 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-07 13:58:03 [INFO] - Carregando query SQL.
+2025-08-07 13:58:03 [INFO] - Conectando ao SQL Server.
+2025-08-07 13:58:05 [INFO] - Executando a consulta.
+2025-08-07 13:58:11 [INFO] - Conectando ao Google Sheets.
+2025-08-07 13:58:11 [INFO] - Formatando datas.
+2025-08-07 13:58:11 [INFO] - Tratando valores ausentes (NaN).
+2025-08-07 13:58:11 [INFO] - Limpando a worksheet.
+2025-08-07 13:58:13 [INFO] - Inserindo novos dados na worksheet.
+2025-08-07 13:58:19 [INFO] - Processo finalizado com sucesso.
+2025-08-07 15:28:21 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-07 15:28:21 [INFO] - Carregando query SQL.
+2025-08-07 15:28:21 [INFO] - Conectando ao SQL Server.
+2025-08-07 15:28:23 [INFO] - Executando a consulta.
+2025-08-07 15:28:29 [INFO] - Conectando ao Google Sheets.
+2025-08-07 15:28:29 [INFO] - Formatando datas.
+2025-08-07 15:28:29 [INFO] - Tratando valores ausentes (NaN).
+2025-08-07 15:28:29 [INFO] - Limpando a worksheet.
+2025-08-07 15:28:32 [INFO] - Inserindo novos dados na worksheet.
+2025-08-07 15:28:38 [INFO] - Processo finalizado com sucesso.
+2025-08-07 16:02:38 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-07 16:02:38 [INFO] - Carregando query SQL.
+2025-08-07 16:02:38 [INFO] - Conectando ao SQL Server.
+2025-08-07 16:02:40 [INFO] - Executando a consulta.
+2025-08-07 16:02:44 [INFO] - Conectando ao Google Sheets.
+2025-08-07 16:02:44 [INFO] - Formatando datas.
+2025-08-07 16:02:44 [INFO] - Tratando valores ausentes (NaN).
+2025-08-07 16:02:44 [INFO] - Limpando a worksheet.
+2025-08-07 16:02:47 [INFO] - Inserindo novos dados na worksheet.
+2025-08-07 16:02:52 [INFO] - Processo finalizado com sucesso.
+2025-08-07 16:06:52 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-07 16:06:52 [INFO] - Carregando query SQL.
+2025-08-07 16:06:52 [INFO] - Conectando ao SQL Server.
+2025-08-07 16:06:54 [INFO] - Executando a consulta.
+2025-08-07 16:07:01 [INFO] - Conectando ao Google Sheets.
+2025-08-07 16:07:01 [INFO] - Formatando datas.
+2025-08-07 16:07:01 [INFO] - Tratando valores ausentes (NaN).
+2025-08-07 16:07:01 [INFO] - Limpando a worksheet.
+2025-08-07 16:07:02 [INFO] - Inserindo novos dados na worksheet.
+2025-08-07 16:07:08 [INFO] - Processo finalizado com sucesso.
+2025-08-07 17:22:35 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-07 17:22:35 [INFO] - Carregando query SQL.
+2025-08-07 17:22:35 [INFO] - Conectando ao SQL Server.
+2025-08-07 17:22:37 [INFO] - Executando a consulta.
+2025-08-07 17:22:42 [INFO] - Conectando ao Google Sheets.
+2025-08-07 17:22:42 [INFO] - Formatando datas.
+2025-08-07 17:22:42 [INFO] - Tratando valores ausentes (NaN).
+2025-08-07 17:22:42 [INFO] - Limpando a worksheet.
+2025-08-07 17:22:44 [INFO] - Inserindo novos dados na worksheet.
+2025-08-07 17:22:51 [INFO] - Processo finalizado com sucesso.
+2025-08-07 17:26:02 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-07 17:26:02 [INFO] - Carregando query SQL.
+2025-08-07 17:26:02 [INFO] - Conectando ao SQL Server.
+2025-08-07 17:26:04 [INFO] - Executando a consulta.
+2025-08-07 17:26:12 [INFO] - Conectando ao Google Sheets.
+2025-08-07 17:26:12 [INFO] - Formatando datas.
+2025-08-07 17:26:12 [INFO] - Tratando valores ausentes (NaN).
+2025-08-07 17:26:12 [INFO] - Limpando a worksheet.
+2025-08-07 17:26:13 [INFO] - Inserindo novos dados na worksheet.
+2025-08-07 17:26:23 [INFO] - Processo finalizado com sucesso.
+2025-08-11 10:09:34 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-11 10:09:34 [INFO] - Carregando query SQL.
+2025-08-11 10:09:34 [INFO] - Conectando ao SQL Server.
+2025-08-11 10:09:36 [INFO] - Executando a consulta.
+2025-08-11 10:09:37 [INFO] - Conectando ao Google Sheets.
+2025-08-11 10:09:37 [INFO] - Formatando datas.
+2025-08-11 10:09:37 [INFO] - Tratando valores ausentes (NaN).
+2025-08-11 10:09:37 [INFO] - Limpando a worksheet.
+2025-08-11 10:09:39 [ERROR] - Erro durante o processo: INADIMPLENTES
+Traceback (most recent call last):
+  File "C:\Users\gabri\Downloads\MAILING_INADIMPLENTES\venv\Lib\site-packages\gspread\spreadsheet.py", line 327, in worksheet
+    item = finditem(
+        lambda x: x["properties"]["title"] == title,
+        sheet_data["sheets"],
+    )
+  File "C:\Users\gabri\Downloads\MAILING_INADIMPLENTES\venv\Lib\site-packages\gspread\utils.py", line 224, in finditem
+    return next(item for item in seq if func(item))
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\gabri\Downloads\MAILING_INADIMPLENTES\main.py", line 53, in main
+    clear_worksheet(client, GOOGLE_URL, WORKSHEET_NAME)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Downloads\MAILING_INADIMPLENTES\mods\google_sheets.py", line 31, in clear_worksheet
+    worksheet = spreadsheet.worksheet(worksheet_name)
+  File "C:\Users\gabri\Downloads\MAILING_INADIMPLENTES\venv\Lib\site-packages\gspread\spreadsheet.py", line 333, in worksheet
+    raise WorksheetNotFound(title)
+gspread.exceptions.WorksheetNotFound: INADIMPLENTES
+2025-08-11 10:10:48 [INFO] - Iniciando o processo de atualização de dados.
+2025-08-11 10:10:48 [INFO] - Carregando query SQL.
+2025-08-11 10:10:48 [INFO] - Conectando ao SQL Server.
+2025-08-11 10:10:50 [INFO] - Executando a consulta.
+2025-08-11 10:10:51 [INFO] - Conectando ao Google Sheets.
+2025-08-11 10:10:51 [INFO] - Formatando datas.
+2025-08-11 10:10:51 [INFO] - Tratando valores ausentes (NaN).
+2025-08-11 10:10:51 [INFO] - Limpando a worksheet.
+2025-08-11 10:10:53 [INFO] - Inserindo novos dados na worksheet.
+2025-08-11 10:10:55 [INFO] - Processo finalizado com sucesso.
