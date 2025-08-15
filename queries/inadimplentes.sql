@@ -160,10 +160,22 @@ HIST_INAD AS (
             ELSE 'Idade inválida'
         END AS FAIXA_ETARIA,
         C.NOME,
-        C.TELEFONE,
-        C.TELEFONE_3,
-        C.TELEFONE_4,
-        C.TELEFONE_FIXO,
+        CASE
+            WHEN C.TELEFONE LIKE '55%' THEN C.TELEFONE
+            ELSE CONCAT('55', C.TELEFONE)
+        END AS TELEFONE,
+        CASE
+            WHEN C.TELEFONE_3 LIKE '55%' THEN C.TELEFONE_3
+            ELSE CONCAT('55', C.TELEFONE_3)
+        END AS TELEFONE_3,
+        CASE
+            WHEN C.TELEFONE_4 LIKE '55%' THEN C.TELEFONE_4
+            ELSE CONCAT('55', C.TELEFONE_4)
+        END AS TELEFONE_4,
+        CASE
+            WHEN C.TELEFONE_FIXO LIKE '55%' THEN C.TELEFONE_FIXO
+            ELSE CONCAT('55', C.TELEFONE_FIXO)
+        END AS TELEFONE_FIXO,
         C.CPF,
         C.ENDERECO_ID,
         TRIM(REPLACE(E.CEP, CHAR(9), '')) AS CEP,
